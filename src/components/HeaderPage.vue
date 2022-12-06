@@ -50,7 +50,7 @@ export default {
  padding: 1rem;
 }
 .nav_bar img{
-  width: 200px;
+  width: 120px;
 }
 .right_nav{
   display: flex;
