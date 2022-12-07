@@ -15,10 +15,14 @@
         </ul>
         <ul>
           <li>Stay in touch with us </li>
-          <font-awesome-icon icon="fa-brands fa-twitter" />
+          <li>
+            <span><font-awesome-icon icon="fa-brands fa-twitter"/></span>
+            <span><font-awesome-icon icon="fa-brands fa-pinterest-p"/></span>
+            <span><font-awesome-icon icon="fa-brands fa-facebook-f"/></span>
+            <span><font-awesome-icon icon="fa-brands fa-linkedin-in"/></span>
+          </li>
         </ul>
     </div>
-
   </footer>
 </template>
 
@@ -46,5 +50,7 @@ footer{
     }
   }
 }
-
+span{
+  margin: .5rem;
+}
 </style>

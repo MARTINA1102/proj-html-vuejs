@@ -1,12 +1,19 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faInstagram, faPinterest, faTwitter, faLinkedin,
+  faTwitter, faFacebookF, faLinkedinIn, faPinterestP,
 } from '@fortawesome/free-brands-svg-icons';
+import { faLightbulb, faComment } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {
+  faCloud, faPencil, faChevronLeft, faChevronRight, faArrowUp,
+} from '@fortawesome/free-solid-svg-icons';
 import Vue from 'vue';
 import App from './App.vue';
 
-library.add(faInstagram, faPinterest, faTwitter, faLinkedin);
+library.add(faTwitter);
+library.add(faFacebookF, faLinkedinIn, faPinterestP);
+library.add(faLightbulb, faComment);
+library.add(faCloud, faPencil, faChevronLeft, faChevronRight, faArrowUp);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 new Vue({
   render: (h) => h(App),

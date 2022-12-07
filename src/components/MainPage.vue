@@ -8,19 +8,46 @@
       <div class="immagine"><img src="./img/h-2-port-img-5.jpg" alt=""></div>
       <div class="immagine"><img src="./img/h-2-port-img-6.jpg" alt=""></div>
     </div>
+    <div class="carrello">
+      <div><img src="./img/svg-7.svg" alt="" class="cerchio"></div>
+      <div><img src="./img/svg-6.svg" alt="" class="spesa"></div>
+    </div>
+    <div class="freccia-sup"><font-awesome-icon icon="fa-solid fa-arrow-up" /></div>
+    <div class="freccia-superiore1"><font-awesome-icon icon="fa-solid fa-arrow-up" /></div>
     <div class="working_cont">
-      <h1>Working <span>process</span></h1>
+      <h2>Working <span>process</span></h2>
       <div class="ico_cont">
-        <ul v-for="ico in arrIco" :key="ico.title">
-          <li><img :src="ico.img" :alt="ico.text"></li>
-          <li><h2>{{ico.title}}</h2></li>
-          <li>{{ico.text}}</li>
+        <ul>
+          <li><font-awesome-icon class="icona" icon="fa-regular fa-lightbulb"
+            style="color:#BADAC9" /></li>
+          <li><h4>First theres an idea</h4></li>
+          <li>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</li>
+        </ul>
+        <ul>
+          <li><font-awesome-icon class="icona" icon="fa-regular fa-comment"
+            style="color:#F8D12D"/></li>
+          <li><h4>Then we talk about</h4></li>
+          <li>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</li>
+        </ul>
+        <ul>
+          <li><font-awesome-icon class="icona" icon="fa-solid fa-cloud"
+            style="color:#80465F"/></li>
+          <li><h4>And we think about</h4></li>
+          <li>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</li>
+        </ul>
+        <ul>
+          <li><font-awesome-icon class="icona" icon="fa-solid fa-pencil"
+            style="color:#EB6950"/></li>
+          <li><h4>So we draw alongt</h4></li>
+          <li>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</li>
         </ul>
       </div>
+      <div class="freccia-superiore2"><font-awesome-icon icon="fa-solid fa-arrow-up" /></div>
     </div>
     <div class="cont_gen">
+      <img class="nuvola" src="./img/short-slider-rev-1-img-5.png" alt="">
       <div class="want_to">
-        <h1>Want we work with us? Send us <span>a message</span></h1>
+        <h2>Want we work with us? Send us <span>a message!</span></h2>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud
@@ -31,20 +58,28 @@
     </div>
     <div class="banner_img">
         <ul>
-          <li><img class="foto" src="./img/h-2-blog-img-1.jpg" alt="img1"></li>
-          <li><h2>This way, loves: a detailed quide throgh new design</h2></li>
+          <li>
+            <div class="calendario"><div class="n7">07</div><div class="band">MAY 19</div></div>
+            <img class="foto" src="./img/h-2-blog-img-1.jpg" alt="img1">
+          </li>
+          <li><h4>This way, loves: a detailed quide throgh new design</h4></li>
           <li>By Emily Fields</li>
         </ul>
         <ul>
-          <li><img class="foto" src="./img/h-2-blog-img-2.jpg" alt="img2"></li>
-          <li><h2>I try to give people a different way of looking art</h2></li>
+          <li>
+            <div class="calendario"><div class="n7">07</div><div class="band">MAY' 19</div></div>
+            <img class="foto" src="./img/h-2-blog-img-2.jpg" alt="img2"></li>
+          <li><h4>I try to give people a different way of looking art</h4></li>
           <li>By Emily Fields</li>
         </ul>
         <ul>
-          <li><img class="foto" src="./img/h-2-blog-img-3.jpg" alt="img3"></li>
-          <li><h2>Introduce Richard Laperrière of those amazing features</h2></li>
+          <li>
+            <div class="calendario"><div class="n7">07</div><div class="band">MAY 19</div></div>
+            <img class="foto" src="./img/h-2-blog-img-3.jpg" alt="img3"></li>
+          <li><h4>Introduce Richard Laperrière of those amazing features</h4></li>
           <li>By Emily Fields</li>
         </ul>
+        <div class="freccia-superiore3"><font-awesome-icon icon="fa-solid fa-arrow-up" /></div>
     </div>
 
   </main>
@@ -53,43 +88,69 @@
 <script>
 export default {
   name: 'MainPage',
-  data() {
-    return {
-      arrIco: [
-        {
-          img: 'https://www.shutterstock.com/image-vector/idea-vector-icon-isolated-on-260nw-1145918294.jpg',
-          title: 'First theres an idea',
-          text: 'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself',
-        },
-        {
-          img: 'https://e7.pngegg.com/pngimages/92/1003/png-clipart-speech-balloon-text-comic-book-quote-bubble-comics-white.png',
-          title: 'Then we talk about',
-          text: 'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself',
-        },
-        {
-          img: 'https://e7.pngegg.com/pngimages/827/573/png-clipart-computer-icons-cloud-computing-icon-design-cloud-shape-heart-cloud-computing.png',
-          title: 'And we think about',
-          text: 'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself',
-        },
-        {
-          img: 'https://png.pngtree.com/png-clipart/20210312/original/pngtree-black-color-pencil-icon-png-image_6068492.jpg',
-          title: 'So we draw along',
-          text: 'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself',
-        },
-
-      ],
-    };
-  },
 };
 </script>
 
 <style lang="scss" scoped>
+.freccia-sup{
+  position: absolute;
+  bottom: -22rem;
+  right: 1rem;
+  color: white;
+  background-color: #D8F0E3;
+  padding: .5rem;
+}
+.freccia-superiore1{
+  position: absolute;
+  bottom: -50rem;
+  right: 1rem;
+  color: white;
+  background-color: #D8F0E3;
+  padding: .5rem;
+}
+.freccia-superiore2{
+  position: absolute;
+  bottom: -83rem;
+  right: 1rem;
+  color: white;
+  background-color: #D8F0E3;
+  padding: .5rem;
+}
+.freccia-superiore3{
+  position: absolute;
+  bottom: -115rem;
+  right: 1rem;
+  color: white;
+  background-color: #D8F0E3;
+  padding: .5rem;
+}
 .container_img{
   display: flex;
   flex-wrap: wrap;
   margin-top:5rem;
   margin-bottom: 5rem;
+  position: relative;
 }
+.carrello{
+  position: absolute;
+  right: 0rem;
+  top: 43rem;
+  div{
+    width: 1rem;
+  }
+  img{
+    width: 100%;
+    color: white;
+  }
+}
+.cerchio{
+  fill: white;
+  background-color:#EE2852;
+}
+.spesa{
+  background-color: white;
+}
+
 .immagine{
   flex: 1 0 33.3%;
   img{
@@ -97,12 +158,16 @@ export default {
   }
 }
 
-h1{
+h2{
+  font-weight: 200;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   span{
-    font-style: italic;
+    font-style:italic;
   }
+}
+h4{
+  font-weight: 400;
 }
 .ico_cont{
   max-width: 1200px;
@@ -110,19 +175,34 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  background-image: url(./img/svg-3.svg);
+  background-repeat: no-repeat;
+  background-size: 1200px 100px;
   ul{
     list-style: none;
     text-align: center;
     li{
-      padding: 1rem;
+      padding: .5rem;
     }
   }
   img{
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    width: 900px;
+    z-index: 0;
 
   }
+}
+.icona{
+  font-size: 3rem;
+  background-color: #FAF7F1;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 2rem;
+  z-index: 900;
 }
 .want_to{
   max-width: 1200px;
@@ -140,11 +220,26 @@ button{
   margin-top: 1rem;
   background-color: #D8F0E3;
   border:2px solid #D8F0E3;
-  padding: 1rem;
+  padding: 1rem 5rem;
+}
+button:hover{
+  background-color: #F3D0C7;
+  border:2px solid #F3D0C7;
+  color: white;
+
 }
 .cont_gen{
   background-color: #FAF7F1;
   padding: 2rem;
+  position: relative;
+}
+.nuvola{
+  position: absolute;
+  top:0rem;
+  left: -4rem;
+  rotate: 180deg;
+  width: 25rem;
+  height: 2rem;
 }
 .banner_img{
   max-width: 1200px;
@@ -158,8 +253,32 @@ button{
     flex: 0 0 30%;
     li{
       padding-top: .8rem;
+      position: relative;
       img{
       width: 100%;
+      }
+      .calendario{
+        text-align: center;
+        position:absolute;
+        top: 0;
+        left: .5rem;
+        .n7{
+          background-color: #c0e1cf;
+          padding: 1rem;
+          font-size: 1rem;
+          width: 3rem;
+          height: 3rem;
+        }
+        .band{
+          background-color: #F3D0C7;
+          font-size: .5rem;
+          width: 3rem;
+          height: 3rem;
+          border-bottom: 1.5rem solid yellow;
+          border-left: 1.5rem solid transparent;
+          border-right: 1.5rem solid transparent;
+        }
+
       }
     }
   }
