@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .elemenu:hover{
-  padding-bottom: 0px;
+  padding-bottom:0;
   border-bottom:3px solid #e1c0b0;
 }
 .descrizione{

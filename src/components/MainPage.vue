@@ -283,9 +283,13 @@ button:hover{
 
 }
 .cont_gen{
-  background-color: #FAF7F1;
-  padding: 2rem;
+  background-color: white;
+  background-image: url(./img/background.JPG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   position: relative;
+  padding: 2rem;
 }
 .nuvola{
   position: absolute;
