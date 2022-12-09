@@ -1,20 +1,20 @@
 <template>
   <footer>
     <div>
-        <ul>
+        <ul v-for="ele in arrFooter" :key="ele">
           <li><img src="./img/logo-sidearea-1.png" alt=""></li>
-          <li>Let's Get Creative</li>
+          <li>{{ele.text}}</li>
         </ul>
-        <ul>
-          <li>maree.qode@gmail.com</li>
-          <li>+44645 321 789</li>
+        <ul v-for="ele in arrFooter" :key="ele">
+          <li>{{ele.mail}}</li>
+          <li>{{ele.number}}</li>
         </ul>
-        <ul>
-          <li>Avenue d'Auderghem 10</li>
-          <li>1040 Brussels, Belgium</li>
+        <ul v-for="ele in arrFooter" :key="ele">
+          <li>{{ele.address}}</li>
+          <li>{{ele.city}}</li>
         </ul>
-        <ul>
-          <li>Stay in touch with us </li>
+        <ul v-for="ele in arrFooter" :key="ele">
+          <li>{{ele.text1}} </li>
           <li>
             <span><font-awesome-icon icon="fa-brands fa-twitter"/></span>
             <span><font-awesome-icon icon="fa-brands fa-pinterest-p"/></span>
@@ -29,6 +29,9 @@
 <script>
 export default {
   name: 'FooterPage',
+  props: {
+    arrFooter: Array,
+  },
 };
 </script>
 
@@ -36,7 +39,7 @@ export default {
 footer{
   background-color:#c0e1cf;
   div{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding:3rem 0;
     display: flex;

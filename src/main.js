@@ -5,7 +5,7 @@ import {
 import { faLightbulb, faComment } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
-  faCloud, faPencil, faChevronLeft, faChevronRight, faArrowUp,
+  faCloud, faPencil, faCircleChevronLeft, faCircleChevronRight, faArrowUp, faEllipsis,
 } from '@fortawesome/free-solid-svg-icons';
 import Vue from 'vue';
 import App from './App.vue';
@@ -13,7 +13,7 @@ import App from './App.vue';
 library.add(faTwitter);
 library.add(faFacebookF, faLinkedinIn, faPinterestP);
 library.add(faLightbulb, faComment);
-library.add(faCloud, faPencil, faChevronLeft, faChevronRight, faArrowUp);
+library.add(faCloud, faPencil, faCircleChevronLeft, faCircleChevronRight, faArrowUp, faEllipsis);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 new Vue({
   render: (h) => h(App),

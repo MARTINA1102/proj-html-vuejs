@@ -8,14 +8,15 @@
       </ul>
     </div>
     <div class="arrow">
-        <i class="fa-solid fa-chevron-left freccia" style="color:white"></i>
-        <i class="fa-solid fa-chevron-right freccia" style="color:white"></i>
+        <font-awesome-icon icon="fa-solid fa-circle-chevron-left" class="freccia"/>
+        <font-awesome-icon icon="fa-solid fa-circle-chevron-right" class="freccia"/>
     </div>
     <div class="container">
       <div class="testo">
-        <h1>Devotion that never <span>ends</span></h1>
-        <div>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-         consectetur, adipisci sed quia non numquam eius modi.
+        <h1>Devotion that never <span class="corsivo">ends</span></h1>
+        <div class="color-grey descrizione">
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci sed quia non numquam eius modi.
         </div>
         <button>READ MORE</button>
       </div>
@@ -36,31 +37,28 @@
       <div class="img_pos"><img class="foglia-fascio" src="./img/h-2-slider-img-17.png"
         alt=""></div>
     </div>
-    <div class="points">. . .</div>
+    <div class="points"><font-awesome-icon icon="fa-solid fa-ellipsis" /></div>
   </header>
 </template>
 
 <script>
 export default {
   name: 'HeaderPage',
-  data() {
-    return {
-      arrNav: [
-        'HOME',
-        'PAGES',
-        'PORTFOLIO',
-        'BLOG',
-        'SHOP',
-        'ELEMENTS',
-      ],
-
-    };
+  props: {
+    arrNav: Array,
   },
-
 };
 </script>
 
 <style lang="scss" scoped>
+.descrizione{
+  padding: 1rem 0rem;
+}
+.corsivo{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: bold;
+}
 .nav_bar{
  display: flex;
  justify-content: space-between;
@@ -100,7 +98,7 @@ export default {
   margin: 0 auto;
 }
 .freccia{
-  background-color: #e1c0b0;
+  color: #e1c0b0;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -124,10 +122,10 @@ button{
   margin-top: 1rem;
   background-color: white;
   border:2px solid #F5D8CA;
-  padding: 1rem;
+  padding: 1rem 5rem;
 }
 .testo, .img_composta{
-  flex: 0 0 40%
+  flex: 0 0 40%;
 }
 .relative{
   position: relative;
@@ -177,6 +175,9 @@ button{
   right: 50rem;
   bottom: 25rem;
   width: 2rem;
+}
+.color-grey{
+  color: grey;
 }
 
 </style>
