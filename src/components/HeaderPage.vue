@@ -3,8 +3,8 @@
     <div class="nav_bar">
       <img src="./img/logo-sidearea-1.png" alt="">
       <ul class="right_nav">
-        <li v-for="ele in arrNav" :key="ele">{{ele}}</li>
-        <li><div class="menu"><img src="./img/svg-1.svg" alt=""></div></li>
+        <li class="elemenu" v-for="ele in arrNav" :key="ele">{{ele}}</li>
+        <li class="elemenu"><div class="menu"><img src="./img/svg-1.svg" alt=""></div></li>
       </ul>
     </div>
     <div class="arrow">
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.elemenu:hover{
+  padding-bottom: 0px;
+  border-bottom:3px solid #e1c0b0;
+}
 .descrizione{
   padding: 1rem 0rem;
 }

@@ -16,10 +16,10 @@
         <ul v-for="ele in arrFooter" :key="ele">
           <li>{{ele.text1}} </li>
           <li>
-            <span><font-awesome-icon icon="fa-brands fa-twitter"/></span>
-            <span><font-awesome-icon icon="fa-brands fa-pinterest-p"/></span>
-            <span><font-awesome-icon icon="fa-brands fa-facebook-f"/></span>
-            <span><font-awesome-icon icon="fa-brands fa-linkedin-in"/></span>
+            <span><font-awesome-icon :icon='ele.twitter'/></span>
+            <span><font-awesome-icon :icon='ele.pinterest'/></span>
+            <span><font-awesome-icon :icon='ele.facebook'/></span>
+            <span><font-awesome-icon :icon='ele.linkedin'/></span>
           </li>
         </ul>
     </div>

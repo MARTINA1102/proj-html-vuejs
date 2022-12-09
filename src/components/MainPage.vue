@@ -4,7 +4,7 @@
       <div class="immagine"><img src="./img/h-2-port-img-1.jpg" alt=""></div>
       <div class="immagine"><img src="./img/h-2-port-img-2.jpg" alt=""></div>
       <div class="immagine"><img src="./img/h-2-port-img-3.jpg" alt=""></div>
-      <div class="img-4 immagine"><img src="./img/h-2-port-img-4.jpg" alt=""></div>
+      <div class="immagine"><img class="img-4" src="./img/h-2-port-img-4.jpg" alt=""></div>
       <div class="immagine"><img src="./img/h-2-port-img-5.jpg" alt=""></div>
       <div class="immagine"><img src="./img/h-2-port-img-6.jpg" alt=""></div>
       <div class="top-img">
@@ -64,7 +64,7 @@
           incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commo.
         </div>
-        <button>CONTACT</button>
+        <button>CONTACT <font-awesome-icon icon="fa-solid fa-circle" class="hover-btn" /></button>
       </div>
     </div>
     <div class="banner_img">
@@ -156,19 +156,23 @@ export default {
   margin-top:5rem;
   margin-bottom: 5rem;
   position: relative;
-  .top-img{
-  color: black;
+}
+.top-img{
+  opacity: 0;
   position:absolute;
   bottom: 15rem;
   background-color: white;
   padding: 1rem;
   }
-}
-.img-4:hover .top-img{
+.top-img:hover{
+  opacity: 100;
   background-color: white;
   color: black;
+  position:absolute;
+  bottom: 15rem;
+  background-color: white;
+  padding: 1rem;
 }
-
 .carrello{
   position: absolute;
   right: 0rem;
@@ -261,11 +265,21 @@ button{
   background-color: #D8F0E3;
   border:2px solid #D8F0E3;
   padding: 1rem 5rem;
+  position: relative;
+  .hover-btn{
+    display: none;
+  }
 }
 button:hover{
   background-color: #e1c0b0;
   border:2px solid #e1c0b0;
   color: white;
+  .hover-btn{
+    display: block;
+    color: #F3D0C7;
+    position: absolute;
+    right: 2rem;
+  }
 
 }
 .cont_gen{

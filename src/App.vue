@@ -39,6 +39,10 @@ export default {
           address: "Avenue d'Auderghem 10",
           city: '1040 Brussels, Belgium',
           text1: 'Stay in touch with us',
+          twitter: 'fa-brands fa-twitter',
+          pinterest: 'fa-brands fa-pinterest-p',
+          facebook: 'fa-brands fa-facebook-f',
+          linkedin: 'fa-brands fa-linkedin-in',
         },
       ],
     };
